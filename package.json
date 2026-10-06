@@ -1,0 +1,11 @@
+{
+  "name": "reconlens",
+  "version": "1.0.0",
+  "description": "Chrome MV3 extension for passive information gathering and security header auditing",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "node tests/analysis.test.js",
+    "lint": "node --check background.js && node --check popup.js && node --check analysis.js && node --check signatures.js"
+  }
+}

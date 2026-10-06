@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ReconLens - Passive Info Gathering",
+  "version": "1.0.0",
+  "description": "Analisis pasif situs yang sedang dibuka: teknologi, security header, cookie, pihak ketiga, recon halaman, dan domain intel.",
+  "minimum_chrome_version": "110",
+  "permissions": ["webRequest", "storage", "cookies", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ReconLens",
+    "default_icon": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" }
+  },
+  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" }
+}
